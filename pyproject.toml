@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "minimal-expense-budget-tracker"
+version = "1.0.0"
+description = "A local SQLite expense tracker with validated records and monthly budgets."
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = ["pydantic>=2.6", "plotext>=5.2"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["expense_budget_tracker*"]
